@@ -1,0 +1,130 @@
+:root {
+  --bg-dark-main: #090d16;
+  --bg-dark-card: #111827;
+  --bg-dark-elevated: #1a2336;
+  --border-gamer: rgba(56, 189, 248, 0.22);
+  --neon-cyan: #22d3ee;
+  --neon-purple: #a855f7;
+  --text-light: #f1f5f9;
+  --text-muted-dark: #94a3b8;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-dark-main) !important;
+  color: var(--text-light) !important;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(168, 85, 247, 0.14), transparent 35%),
+    radial-gradient(circle at 85% 20%, rgba(34, 211, 238, 0.14), transparent 35%);
+}
+
+/* Navbar bergaya arena gaming */
+.navbar {
+  background-color: rgba(11, 15, 25, 0.92) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-gamer);
+}
+
+.navbar-brand {
+  color: var(--neon-cyan) !important;
+  letter-spacing: 0.8px;
+  text-shadow: 0 0 14px rgba(34, 211, 238, 0.35);
+}
+
+/* Hero banner */
+header.bg-dark {
+  background: linear-gradient(135deg, #0b1020 0%, #161b33 55%, #241442 100%) !important;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.35) !important;
+}
+
+/* Kartu informasi turnamen */
+.card {
+  background-color: var(--bg-dark-card) !important;
+  color: var(--text-light) !important;
+  border: 1px solid var(--border-gamer) !important;
+  border-radius: 0.85rem;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 10px 26px rgba(34, 211, 238, 0.16) !important;
+}
+
+.card-text,
+.text-secondary,
+.text-muted {
+  color: var(--text-muted-dark) !important;
+}
+
+.text-dark {
+  color: var(--text-light) !important;
+}
+
+/* Tombol & badge aksen gamer */
+.btn-primary {
+  background: linear-gradient(90deg, #06b6d4 0%, #7c3aed 100%);
+  border: none;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #22d3ee 0%, #9333ea 100%);
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.35);
+}
+
+.btn-outline-primary {
+  color: var(--neon-cyan);
+  border-color: var(--neon-cyan);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--neon-cyan);
+  color: #090d16;
+  border-color: var(--neon-cyan);
+}
+
+.badge.bg-primary {
+  background: rgba(34, 211, 238, 0.15) !important;
+  color: var(--neon-cyan) !important;
+  border: 1px solid rgba(34, 211, 238, 0.4);
+}
+
+/* Form input & kotak info di tema gelap */
+.form-control {
+  background-color: var(--bg-dark-elevated) !important;
+  border: 1px solid rgba(148, 163, 184, 0.25) !important;
+  color: var(--text-light) !important;
+}
+
+.form-control:focus {
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 0 0 0.2rem rgba(34, 211, 238, 0.2) !important;
+}
+
+.form-control::placeholder {
+  color: #64748b;
+}
+
+.bg-light {
+  background-color: var(--bg-dark-elevated) !important;
+}
+
+.alert-secondary {
+  background-color: rgba(30, 41, 59, 0.85) !important;
+  border-color: rgba(148, 163, 184, 0.25) !important;
+  color: #cbd5e1 !important;
+}
+
+hr {
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+/* Footer gelap dengan garis aksen */
+footer {
+  background-color: #070a12 !important;
+  border-top: 1px solid var(--border-gamer);
+  color: #cbd5e1 !important;
+  letter-spacing: 0.3px;
+}
