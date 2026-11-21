@@ -1,55 +1,57 @@
 :root {
-  --bg-dark-main: #090d16;
-  --bg-dark-card: #111827;
-  --bg-dark-elevated: #1a2336;
-  --border-gamer: rgba(56, 189, 248, 0.22);
-  --neon-cyan: #22d3ee;
-  --neon-purple: #a855f7;
-  --text-light: #f1f5f9;
-  --text-muted-dark: #94a3b8;
+  --bg-black-main: #070707;
+  --bg-black-card: #111111;
+  --bg-black-elevated: #1a1a1a;
+  --border-yellow: rgba(250, 204, 21, 0.25);
+  --accent-yellow: #facc15;
+  --accent-yellow-hover: #eab308;
+  --text-light: #f8fafc;
+  --text-muted-dark: #a3a3a3;
 }
 
 body {
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-  background-color: var(--bg-dark-main) !important;
+  background-color: var(--bg-black-main) !important;
   color: var(--text-light) !important;
   background-image:
-    radial-gradient(circle at 15% 10%, rgba(168, 85, 247, 0.14), transparent 35%),
-    radial-gradient(circle at 85% 20%, rgba(34, 211, 238, 0.14), transparent 35%);
+    radial-gradient(circle at 15% 10%, rgba(250, 204, 21, 0.10), transparent 35%),
+    radial-gradient(circle at 85% 25%, rgba(234, 179, 8, 0.08), transparent 35%);
 }
 
-/* Navbar bergaya arena gaming */
 .navbar {
-  background-color: rgba(11, 15, 25, 0.92) !important;
+  background-color: rgba(10, 10, 10, 0.94) !important;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-gamer);
+  border-bottom: 1px solid var(--border-yellow);
 }
 
 .navbar-brand {
-  color: var(--neon-cyan) !important;
+  color: var(--accent-yellow) !important;
   letter-spacing: 0.8px;
-  text-shadow: 0 0 14px rgba(34, 211, 238, 0.35);
+  text-shadow: 0 0 14px rgba(250, 204, 21, 0.35);
 }
 
-/* Hero banner */
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-yellow) !important;
+}
+
 header.bg-dark {
-  background: linear-gradient(135deg, #0b1020 0%, #161b33 55%, #241442 100%) !important;
-  border-bottom: 1px solid rgba(168, 85, 247, 0.35) !important;
+  background: linear-gradient(135deg, #050505 0%, #141414 60%, #261f06 100%) !important;
+  border-bottom: 2px solid var(--accent-yellow) !important;
 }
 
-/* Kartu informasi turnamen */
 .card {
-  background-color: var(--bg-dark-card) !important;
+  background-color: var(--bg-black-card) !important;
   color: var(--text-light) !important;
-  border: 1px solid var(--border-gamer) !important;
+  border: 1px solid var(--border-yellow) !important;
   border-radius: 0.85rem;
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  border-color: var(--neon-cyan) !important;
-  box-shadow: 0 10px 26px rgba(34, 211, 238, 0.16) !important;
+  border-color: var(--accent-yellow) !important;
+  box-shadow: 0 10px 26px rgba(250, 204, 21, 0.16) !important;
 }
 
 .card-text,
@@ -62,69 +64,120 @@ header.bg-dark {
   color: var(--text-light) !important;
 }
 
-/* Tombol & badge aksen gamer */
+.text-info,
+.text-primary {
+  color: var(--accent-yellow) !important;
+}
+
 .btn-primary {
-  background: linear-gradient(90deg, #06b6d4 0%, #7c3aed 100%);
-  border: none;
-  color: #ffffff;
+  background-color: var(--accent-yellow) !important;
+  border-color: var(--accent-yellow) !important;
+  color: #070707 !important;
+  font-weight: 700;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(90deg, #22d3ee 0%, #9333ea 100%);
-  box-shadow: 0 0 16px rgba(34, 211, 238, 0.35);
+  background-color: var(--accent-yellow-hover) !important;
+  border-color: var(--accent-yellow-hover) !important;
+  color: #070707 !important;
+  box-shadow: 0 0 16px rgba(250, 204, 21, 0.38);
 }
 
 .btn-outline-primary {
-  color: var(--neon-cyan);
-  border-color: var(--neon-cyan);
+  color: var(--accent-yellow) !important;
+  border-color: var(--accent-yellow) !important;
 }
 
 .btn-outline-primary:hover {
-  background-color: var(--neon-cyan);
-  color: #090d16;
-  border-color: var(--neon-cyan);
+  background-color: var(--accent-yellow) !important;
+  color: #070707 !important;
+  border-color: var(--accent-yellow) !important;
 }
 
 .badge.bg-primary {
-  background: rgba(34, 211, 238, 0.15) !important;
-  color: var(--neon-cyan) !important;
-  border: 1px solid rgba(34, 211, 238, 0.4);
+  background: rgba(250, 204, 21, 0.14) !important;
+  color: var(--accent-yellow) !important;
+  border: 1px solid rgba(250, 204, 21, 0.45);
 }
 
-/* Form input & kotak info di tema gelap */
+a {
+  color: var(--accent-yellow);
+}
+
+a:hover {
+  color: var(--accent-yellow-hover);
+}
+
 .form-control {
-  background-color: var(--bg-dark-elevated) !important;
-  border: 1px solid rgba(148, 163, 184, 0.25) !important;
+  background-color: var(--bg-black-elevated) !important;
+  border: 1px solid rgba(250, 204, 21, 0.25) !important;
   color: var(--text-light) !important;
 }
 
 .form-control:focus {
-  border-color: var(--neon-cyan) !important;
-  box-shadow: 0 0 0 0.2rem rgba(34, 211, 238, 0.2) !important;
+  border-color: var(--accent-yellow) !important;
+  box-shadow: 0 0 0 0.2rem rgba(250, 204, 21, 0.2) !important;
 }
 
 .form-control::placeholder {
-  color: #64748b;
+  color: #737373;
 }
 
-.bg-light {
-  background-color: var(--bg-dark-elevated) !important;
+.bg-light,
+.bg-dark {
+  background-color: var(--bg-black-elevated) !important;
 }
 
 .alert-secondary {
-  background-color: rgba(30, 41, 59, 0.85) !important;
-  border-color: rgba(148, 163, 184, 0.25) !important;
-  color: #cbd5e1 !important;
+  background-color: #171717 !important;
+  border-color: rgba(250, 204, 21, 0.25) !important;
+  color: #e5e5e5 !important;
 }
 
-hr {
-  border-color: rgba(148, 163, 184, 0.2);
+hr,
+.border-top {
+  border-color: rgba(250, 204, 21, 0.18) !important;
 }
 
-/* Footer gelap dengan garis aksen */
 footer {
-  background-color: #070a12 !important;
-  border-top: 1px solid var(--border-gamer);
-  color: #cbd5e1 !important;
+  background-color: #050505 !important;
+  border-top: 1px solid var(--border-yellow);
+  color: #d4d4d4 !important;
   letter-spacing: 0.3px;
+}
+
+.poster-card-frame {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: #090909;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(250, 204, 21, 0.18);
+}
+
+.poster-detail-frame {
+  background-color: #090909;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-right: 1px solid rgba(250, 204, 21, 0.18);
+}
+
+.poster-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  display: block;
+}
+
+.page-fit-desktop {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1440px) {
+  .poster-card-frame {
+    aspect-ratio: 4 / 3; 
+  }
 }

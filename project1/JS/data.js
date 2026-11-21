@@ -6,7 +6,10 @@ const tournamentData = [
     date: "15 Desember 2026",
     location: "Online & Grand Final Bandung",
     prize: "Rp 15.000.000",
-    image: "image/mlbb-banner.jpg",
+    image: "image/poster-mlbb.jpg",
+    contactName: "Ahmad Rizcky Helmi",
+    contactRole: "Tournament Organizer & Admin Pendaftaran",
+    contactPhone: "0812-3456-7890",
     summary: "Pendaftaran resmi dibuka untuk 64 tim terbaik memperebutkan total hadiah 15 juta rupiah.",
     content: "Nexus Arena resmi membuka pendaftaran Nexus Championship Season 4. Babak kualifikasi akan digelar secara online dengan sistem Single Elimination BO3, dan 4 tim terbaik akan bertanding secara offline pada babak Grand Final. Biaya pendaftaran gratis dan terbuka untuk umum."
   },
@@ -17,7 +20,10 @@ const tournamentData = [
     date: "10 Desember 2026",
     location: "Discord Official Nexus Arena",
     prize: "Rp 10.000.000",
-    image: "image/valorant-banner.jpg",
+    image: "image/poster-valorant.jpg",
+    contactName: "Ahmad Rizcky Helmi",
+    contactRole: "Koordinator Pertandingan & Bracket",
+    contactPhone: "0857-9876-5432",
     summary: "Wajib dihadiri oleh seluruh kapten tim peserta Valorant Campus Cup sebelum pertandingan dimulai.",
     content: "Technical Meeting akan membahas regulasi map pool, aturan stand-in pemain, jadwal pertandingan fase grup, serta pengundian bracket resmi. Kapten tim yang tidak hadir dianggap menyetujui seluruh keputusan panitia."
   },
@@ -28,7 +34,10 @@ const tournamentData = [
     date: "20 Desember 2026",
     location: "Kantor Pusat Nexus Arena / Hybrid",
     prize: "Kontrak & Fee Event",
-    image: "image/oprec-banner.jpg",
+    image: "image/poster-oprec.jpg",
+    contactName: "Ahmad Rizcky Helmi",
+    contactRole: "HR & Production Lead",
+    contactPhone: "0821-1122-3344",
     summary: "Bergabunglah bersama tim produksi dan shoutcaster resmi untuk rangkaian turnamen tahun 2027.",
     content: "Perusahaan membuka kesempatan bagi talenta muda di bidang shoutcasting, observer in-game, dan manajemen turnamen. Pelamar yang lolos seleksi administrasi akan mengikuti tahap audisi langsung bersama tim produksi."
   }
